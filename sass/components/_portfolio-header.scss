@@ -1,0 +1,9 @@
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 25px 0px;
+  }
+}

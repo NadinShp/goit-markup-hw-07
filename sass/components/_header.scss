@@ -1,0 +1,110 @@
+.logo {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #000000;
+  }
+  &__color {
+    color: #2196f3;
+  }
+}
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    margin-left: 93px;
+
+    &-link {
+      position: relative;
+      font-family: $main-font;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.02em;
+      color: $color-title;
+
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &--active {
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.02em;
+        color: $color-accent;
+      }
+
+      &--active::after {
+        position: absolute;
+        left: 0;
+        bottom: -33px;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $color-accent;
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: $color-accent;
+      }
+    }
+    &-item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.address__list {
+  display: flex;
+
+  &-link {
+    display: flex;
+    align-items: center;
+
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: $color-additional;
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+      text-decoration: none;
+    }
+    & > svg {
+      margin-right: 10px;
+      fill: $color-additional;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover > svg {
+      fill: $color-accent;
+    }
+  }
+  &-item:not(last-child) {
+    margin-right: 50px;
+  }
+}
+.header__address {
+  margin-left: auto;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 25px 0px;
+}
