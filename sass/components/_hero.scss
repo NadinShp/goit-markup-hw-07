@@ -1,5 +1,5 @@
 .hero {
-  padding: 200px 0px;
+  padding: 200px 0;
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -13,11 +13,10 @@
   text-align: center;
 
   &__title {
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     width: 696px;
     height: 120px;
-    margin-bottom: 30px;
-    font-family: Roboto;
+    font-family: $main-font;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
